@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A083A262368741C00F8F2CA /* ReservaCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A083A252368741C00F8F2CA /* ReservaCelda.swift */; };
+		2A083A282368748F00F8F2CA /* Reserva.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A083A272368748F00F8F2CA /* Reserva.swift */; };
+		2A083A2A23687E3C00F8F2CA /* CartaCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A083A2923687E3C00F8F2CA /* CartaCelda.swift */; };
+		2A083A2C23687F2800F8F2CA /* Carta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A083A2B23687F2800F8F2CA /* Carta.swift */; };
 		2A0C579C2367424B004D1708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0C579B2367424B004D1708 /* AppDelegate.swift */; };
 		2A0C57A12367424B004D1708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A0C579F2367424B004D1708 /* Main.storyboard */; };
 		2A0C57A42367424B004D1708 /* TresPuntos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A0C57A22367424B004D1708 /* TresPuntos.xcdatamodeld */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A083A252368741C00F8F2CA /* ReservaCelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservaCelda.swift; sourceTree = "<group>"; };
+		2A083A272368748F00F8F2CA /* Reserva.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reserva.swift; sourceTree = "<group>"; };
+		2A083A2923687E3C00F8F2CA /* CartaCelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaCelda.swift; sourceTree = "<group>"; };
+		2A083A2B23687F2800F8F2CA /* Carta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carta.swift; sourceTree = "<group>"; };
 		2A0C57982367424B004D1708 /* TresPuntos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TresPuntos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A0C579B2367424B004D1708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A0C57A02367424B004D1708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -67,7 +75,11 @@
 				2A753EEA23676EB700404177 /* SWRevealViewController */,
 				2A0C579B2367424B004D1708 /* AppDelegate.swift */,
 				2A753EF0236770CD00404177 /* ReservasListado.swift */,
+				2A083A252368741C00F8F2CA /* ReservaCelda.swift */,
+				2A083A272368748F00F8F2CA /* Reserva.swift */,
 				2A753EF3236772D900404177 /* CartaListado.swift */,
+				2A083A2923687E3C00F8F2CA /* CartaCelda.swift */,
+				2A083A2B23687F2800F8F2CA /* Carta.swift */,
 				2A753EF6236773AD00404177 /* ContactoVista.swift */,
 				2A0C579F2367424B004D1708 /* Main.storyboard */,
 				2A0C57A52367424D004D1708 /* Assets.xcassets */,
@@ -160,11 +172,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A083A282368748F00F8F2CA /* Reserva.swift in Sources */,
 				2A753EF7236773AD00404177 /* ContactoVista.swift in Sources */,
 				2A0C579C2367424B004D1708 /* AppDelegate.swift in Sources */,
+				2A083A2A23687E3C00F8F2CA /* CartaCelda.swift in Sources */,
 				2A0C57A42367424B004D1708 /* TresPuntos.xcdatamodeld in Sources */,
+				2A083A2C23687F2800F8F2CA /* Carta.swift in Sources */,
 				2A753EF4236772D900404177 /* CartaListado.swift in Sources */,
 				2A753EEE23676EDD00404177 /* SWRevealViewController.m in Sources */,
+				2A083A262368741C00F8F2CA /* ReservaCelda.swift in Sources */,
 				2A753EF1236770CD00404177 /* ReservasListado.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,7 +339,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "TresPuntos/SWRevealViewController/TresPuntos-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -342,7 +358,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TresPuntos/SWRevealViewController/TresPuntos-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

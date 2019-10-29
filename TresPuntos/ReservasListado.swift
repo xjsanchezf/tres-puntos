@@ -8,9 +8,12 @@
 
 import UIKit
 
-class ReservasListado: UIViewController {
+class ReservasListado: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBOutlet weak var tableView: UITableView!
+    
+    var reservas: [Reserva] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,5 +23,20 @@ class ReservasListado: UIViewController {
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        
+        reservas = Reserva.crearListadoReservas()
+    }
+
+    
+    // Pintado de celdas en ReservasListado
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return reservas.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let reserva = reservas[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ReservaCelda", for: indexPath) as! ReservaCelda
+        cell.setReserva(reserva: reserva)
+        return cell
     }
 }
